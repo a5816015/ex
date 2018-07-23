@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<html>
+
+<head>
+    <title>ポケモンシルエットクイズ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'test.css' %}" type="text/css">
+</head>
+
+<body>
+	<img src="{% static path %}" width="300" height="300 "alt="シルエット">
+	
+    <div class="hidden_box">
+		<label for="label1">ヒント</label>
+		<input type="checkbox" id="label1" />
+		<div class="hidden_show">
+			{{hint}}
+		</div>
+	</div>
+</body>
+
+</html>
