@@ -8,15 +8,25 @@
 </head>
 
 <body>
-	<img src="{% static path %}" width="300" height="300 "alt="シルエット">
+	<img src="{% static path1 %}" width="300" height="300 "alt="シルエット">
 	
     <div class="hidden_box">
-		<label for="label1">ヒント</label>
+		<label for="label1">ずかんせつめいぶん(一部改訂)</label>
 		<input type="checkbox" id="label1" />
 		<div class="hidden_show">
 			{{hint}}
 		</div>
 	</div>
+	
+	<div class="hidden_box">
+		<label for="label2">こたえ</label>
+		<input type="checkbox" id="label2" />
+		<div class="hidden_show">
+			<p>{{answer}}</p>
+			<img src="{% static path2 %}" width="300" height="300 "alt="こたえ">
+		</div>
+	</div>
+	
 </body>
 
 </html>

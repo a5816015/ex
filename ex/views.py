@@ -4,8 +4,9 @@ import random
 # Create your views here.
 
 def appmain(request):
-	num = random.randint(1,2)
-	path = "silhouette/poke" + str(num) + ".png"
+	num = random.randint(1,20)
+	path1 = "silhouette/poke" + str(num) + ".png"
+	path2 = "answer/poke" + str(num) + ".png"
 	
 	f = open('ex/static/answer.txt', encoding='utf-8')
 	for i in range(1,num+1):
@@ -14,6 +15,8 @@ def appmain(request):
 	f.close
 	
 	return render(request, 'aaa.html', {
-		'path' : path,
+		'path1' : path1,
+		'path2' : path2,
 		'hint' : hint,
+		'answer' : answer,
 	})
