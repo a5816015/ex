@@ -14,7 +14,7 @@ def appmain(request):
 		hint = f.readline()
 	f.close
 	
-	return render(request, 'aaa.html', {
+	return render(request, 'poke.html', {
 		'path1' : path1,
 		'path2' : path2,
 		'hint' : hint,

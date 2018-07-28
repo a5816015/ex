@@ -4,14 +4,17 @@
 <head>
     <title>ポケモンシルエットクイズ</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{% static 'test.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'poke.css' %}" type="text/css">
+	<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 </head>
 
 <body>
+	<h1>ポケモンシルエットクイズ</h1>
+
 	<img src="{% static path1 %}" width="300" height="300 "alt="シルエット">
 	
     <div class="hidden_box">
-		<label for="label1">ずかんせつめいぶん(一部改訂)</label>
+		<label for="label1">ずかんせつめいぶん</label>
 		<input type="checkbox" id="label1" />
 		<div class="hidden_show">
 			{{hint}}
@@ -27,6 +30,9 @@
 		</div>
 	</div>
 	
+	<div class="btn_wrapper">
+		<a href='' class="next_button">つぎへ</a>
+	</div>
 </body>
 
 </html>
