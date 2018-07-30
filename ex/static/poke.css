@@ -5,7 +5,7 @@ html {
 
 body {
 	background-color: #ffffff;
-	width: 90%;
+	width: 80%;
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 15px 30px;
@@ -90,7 +90,21 @@ img {
 	padding-left: 10px;
 }
 
+.footer {
+	text-align: center;
+}
+
+.footer img {
+	display: inline;
+	position: absolute;
+	-ms-transform: translateY(55px);
+    -webkit-transform: translateY(55px);
+    transform: translateY(55px);/*下に動く*/
+}
+
 .btn_wrapper {
+	display: inline-block;
+	margin: 0 auto;
 	text-align: center;
 }
 

@@ -4,7 +4,7 @@ import random
 # Create your views here.
 
 def appmain(request):
-	num = random.randint(1,20)
+	num = random.randint(1,100)
 	path1 = "silhouette/poke" + str(num) + ".png"
 	path2 = "answer/poke" + str(num) + ".png"
 	
